@@ -1,0 +1,192 @@
+
+/* Устанавливаем общий box-sizing для всех элементов */
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+/* Стили для header */
+header {
+  width: 1000px;
+  margin-left: 230px;
+  padding: 10px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+}
+/* body {
+  background-image: url("./images/Background.png");
+} */
+/* Стили для контейнера навигации */
+.nav {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 600px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 40px;
+  box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+}
+
+/* Контейнер для навигационных элементов */
+.nav-items {
+  display: flex;
+}
+
+/* Контейнер для элемента Login */
+.auth-box {
+  margin-left: auto;
+  display: flex; /* Отступ для отделения Login от других элементов */
+  align-items: center;
+}
+
+/* Стили для навигационных элементов */
+.nav-item {
+  color: #83818c;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 5px 6px;
+  z-index: 1;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Псевдоэлемент before для навигационных элементов */
+.nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #dfe2ea;
+  border-radius: 8px 8px 0 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.nav-item:not(.is-active):hover::before {
+  opacity: 1;
+  bottom: 0;
+}
+
+.nav-item:not(.is-active):hover {
+  color: #333;
+}
+
+.nav-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  transition: 0.4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Стили для элементов .auth-item */
+.auth-item {
+  color: #83818c;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 5px 6px;
+  z-index: 1;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Псевдоэлемент before для элементов .auth-item */
+.auth-item::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #dfe2ea;
+  border-radius: 8px 8px 0 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.auth-item:not(.is-active):hover::before {
+  opacity: 1;
+  bottom: 0;
+}
+
+.auth-item:not(.is-active):hover {
+  color: #333;
+}
+
+/* Стили для иконки пользователя */
+.auth-box img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+#logout-button,
+.logout-button {
+  /* Установите желаемые цвета, шрифты, отступы и т.д. */
+  color: #fff;
+  background-color: #adadad;
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+#logout-button:hover,
+.logout-button:hover {
+  background-color: #ba0000;
+}
+.nav-login {
+  color: #83818c;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 10px 6px;
+  z-index: 1;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+.prime_car_img {
+  position: absolute;
+  margin-top: 20px;
+  left: 5%;
+}
+.bg-img {
+  width: 1000px;
+  background: no-repeat;
+}
+
+/* Адаптивные стили для маленьких экранов */
+@media (max-width: 580px) {
+  .nav {
+    overflow: auto;
+    padding: 0 10px;
+  }
+
+  .nav-item,
+  .auth-item {
+    padding: 10px;
+  }
+
+  .auth-box {
+    margin-left: 10px;
+  }
+}
+
+
+/*# sourceMappingURL=cars.css.map*/

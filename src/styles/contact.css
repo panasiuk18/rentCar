@@ -1,0 +1,191 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #efefef;
+}
+.header {
+  background-image: url("../assets/image/matt-antonioli-T_ZdgxzPS5k-unsplash\ 2.jpg");
+  height: 450px;
+  width: 100%;
+  max-width: 1600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.nav {
+  box-shadow: 0 15px 20px rgba(159, 162, 177, 0.8);
+}
+.height {
+  padding-bottom: 30px;
+  align-items: center; /* Центрирование по вертикали */
+  justify-content: center;
+  display: flex;
+}
+.height h1 {
+  max-width: 1600px;
+  text-align: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  position: absolute;
+  margin-top: -610px;
+}
+section.row.testimonials {
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-top: -75px;
+  max-height: 400px;
+  box-shadow: 0px 5px 10px rgba(159, 162, 177, 0.6),
+    5px 0px 10px rgba(159, 162, 177, 0.6),
+    -5px 0px 10px rgba(159, 162, 177, 0.6);
+  border-radius: 10px;
+}
+
+.owl-carousel {
+  margin-top: -15px;
+  width: 100%;
+  cursor: default;
+}
+
+.owl-carousel .item {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  transition: 0.3s all linear;
+}
+.flex {
+  display: flex;
+}
+.owl-carousel .item:hover {
+  background-color: lighten(#1c1b1b, 10%);
+}
+
+.owl-carousel .item:hover p {
+  color: #3c3c3c;
+}
+
+.owl-carousel .item:hover .people-ph {
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+
+.owl-carousel .item h3 {
+  font-size: 15px;
+  color: #6b4476;
+  margin-top: 15px;
+  margin-left: -25px;
+}
+
+.owl-carousel .item p {
+  color: #777777;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.owl-carousel .item .people-ph {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  margin-left: 10px;
+  transition: 0.3s border linear;
+}
+
+section.row.testimonials h2 {
+  color: #000000;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 33px;
+  letter-spacing: 0.1em;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.owl-dots {
+  margin: 20px auto 0; /*for centering the dots*/
+  text-align: center;
+}
+
+.owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: lighten(#6b4476, 10%);
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.owl-dot.active {
+  background: #ffffff;
+}
+
+.owl-dots.disabled {
+  display: block !important;
+}
+.star-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.star-img {
+  max-width: 24px;
+  margin-right: 5px; /* Расстояние между звездами */
+}
+
+.star-img:last-child {
+  margin-right: 0; /* Убираем отступ у последней звезды */
+}
+@media screen and (max-width: 500px) {
+  .height h1 {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 33px;
+  }
+  .owl-carousel .item h3 {
+    font-size: 14px;
+    color: #6b4476;
+    margin-top: 11px;
+    margin-left: -1px;
+  }
+  .star-container {
+    display: flex;
+    justify-content: center;
+    max-width: 60px;
+    margin-top: 20px;
+    margin-left: 35px;
+  }
+  .star-img {
+    max-width: 20px;
+    margin-right: 5px; /* Расстояние между звездами */
+  }
+  section.row.testimonials {
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 430px;
+    margin-top: -75px;
+    max-height: 400px;
+    box-shadow: 0px 5px 10px rgba(159, 162, 177, 0.6),
+      5px 0px 10px rgba(159, 162, 177, 0.6),
+      -5px 0px 10px rgba(159, 162, 177, 0.6);
+    border-radius: 10px;
+  }
+}
