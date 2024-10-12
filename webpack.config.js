@@ -19,7 +19,7 @@ module.exports = {
     publicPath: "/",
     assetModuleFilename: "assets/[name].[contenthash][ext]",
   },
-  mode: "production",
+  mode: "development",
   devtool: "source-map",
   devServer: {
     open: "main.html",
